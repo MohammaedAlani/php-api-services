@@ -1,0 +1,32 @@
+<OTA_AirLowFareSearchRQ xmlns="http://www.opentravel.org/OTA/2003/05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opentravel.org/OTA/2003/05 
+  OTA_AirLowFareSearchRQ.xsd" EchoToken="50987" TimeStamp="2019-08-22T05:44:10+05:30"
+  Target="Test" Version="2.001" SequenceNmbr="1" PrimaryLangID="En-us">
+    <POS>
+        <Source AirlineVendorID="IF" ISOCountry="IQ" ISOCurrency="USD">
+            <RequestorID Type="5" ID="AVTRAOTA"/>
+        </Source>
+    </POS>
+    <OriginDestinationInformation>
+        <DepartureDateTime>2020-12-24</DepartureDateTime>
+        <OriginLocation LocationCode="BGW"/>
+        <DestinationLocation LocationCode="DXB"/>
+    </OriginDestinationInformation>
+    <OriginDestinationInformation>
+        <DepartureDateTime>2020-12-31</DepartureDateTime>
+        <OriginLocation LocationCode="DXB"/>
+        <DestinationLocation LocationCode="BGW"/>
+    </OriginDestinationInformation>
+    <TravelPreferences >
+        <CabinPref  Cabin=""/>
+    </TravelPreferences>
+    <TravelerInfoSummary>
+        <AirTravelerAvail>
+            <PassengerTypeQuantity Code="ADT" Quantity="1"/>
+            <PassengerTypeQuantity Code="CHD" Quantity="1"/>
+            <PassengerTypeQuantity Code="INF" Quantity="1"/>
+        </AirTravelerAvail>
+    </TravelerInfoSummary>
+    <ProcessingInfo SearchType="STANDARD"/>
+</OTA_AirLowFareSearchRQ>

@@ -1,0 +1,44 @@
+<OTA_AirSeatMapV2RQ xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTA/2003/05 OTA_AirSeatMapRQ.xsd" EchoToken="50987" TimeStamp="2018-10-02T14:31:55.890+00:00" Target="Test" Version="2.001" SequenceNmbr="1" PrimaryLangID="En-us">
+	<POS>
+		<Source AirlineVendorID="IF" ISOCountry="IQ" ISOCurrency="USD">
+			<RequestorID Type="5" ID="AVTRAOTA" AgentCode="" IATACode="" AccountNumber=""/>
+		</Source>
+	</POS>
+	<SeatMapRequests>
+		<SeatMapRequest TravelerRefNumberRPHs="">
+			<AirItinerary DirectionInd="Return">
+				<OriginDestinationOptions>
+					<OriginDestinationOption RefNumber="1">
+			             <FlightSegment FlightNumber="IF401" DepartureDateTime="2020-12-24T13:15:00.000+03:00" ArrivalDateTime="2020-12-24T17:00:00.000+04:00" Duration="02:45:00" StopQuantity="0" RPH="28149">
+			                <DepartureAirport LocationCode="BGW" Terminal="T1"/>
+			                <ArrivalAirport LocationCode="DXB" Terminal="T2"/>
+			                <OperatingAirline Code="IF"/>
+			                <Equipment AirEquipType="737-700"/>
+			             </FlightSegment>
+                    	</OriginDestinationOption>
+                    	<OriginDestinationOption RefNumber="2">
+		                  <FlightSegment FlightNumber="IF402" DepartureDateTime="2020-12-31T18:00:00.000+04:00" ArrivalDateTime="2020-12-31T19:45:00.000+03:00" Duration="02:45:00" StopQuantity="0" RPH="28197">
+		                     <DepartureAirport LocationCode="DXB" Terminal="T1"/>
+		                     <ArrivalAirport LocationCode="BGW" Terminal="T2"/>
+		                     <OperatingAirline Code="IF"/>
+		                     <Equipment AirEquipType="737-700"/>
+		                  </FlightSegment>
+                    	</OriginDestinationOption>
+				</OriginDestinationOptions>
+			</AirItinerary>
+			<PriceInfo>
+				<ItinTotalFare>
+					<BaseFare CurrencyCode="USD" DecimalPlaces="2" Amount="609.60"/>
+                    <TotalFare CurrencyCode="USD" DecimalPlaces="2" Amount="769.80"/>
+				</ItinTotalFare>
+			</PriceInfo>
+			<TravelerInfoSummary>
+				<AirTravelerAvail>
+					<PassengerTypeQuantity Code="ADT" Quantity="1"/>
+					<PassengerTypeQuantity Code="CHD" Quantity="1"/>
+					<PassengerTypeQuantity Code="INF" Quantity="1"/>
+				</AirTravelerAvail>
+			</TravelerInfoSummary>
+		</SeatMapRequest>
+	</SeatMapRequests>
+</OTA_AirSeatMapV2RQ>

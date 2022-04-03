@@ -1,0 +1,62 @@
+<OTA_AirLowFareSearchRS EchoToken="50987" TimeStamp="2020-12-15T19:31:05.050Z" Target="Test" Version="2.001" SequenceNmbr="1" PrimaryLangID="En-us" xmlns="http://www.opentravel.org/OTA/2003/05">
+   <Success/>
+   <PricedItineraries>
+      <PricedItinerary SequenceNumber="1">
+         <AirItinerary>
+            <OriginDestinationOptions>
+               <OriginDestinationOption>
+                  <FlightSegment FlightNumber="IF401" ResBookDesigCode="A12" DepartureDateTime="2020-12-24T13:15:00.000+03:00" ArrivalDateTime="2020-12-24T17:00:00.000+04:00" Duration="02:45:00" StopQuantity="0" RPH="28149">
+                     <DepartureAirport LocationCode="BGW"/>
+                     <ArrivalAirport LocationCode="DXB"/>
+                     <OperatingAirline Code="IF"/>
+                     <Equipment AirEquipType="737-700"/>
+                     <BookingClassAvails>
+                        <BookingClassAvail ResBookDesigCode="A12" ResBookDesigQuantity="3"/>
+                     </BookingClassAvails>
+                  </FlightSegment>
+               </OriginDestinationOption>
+            </OriginDestinationOptions>
+         </AirItinerary>
+         <AirItineraryPricingInfo>
+            <ItinTotalFare>
+               <BaseFare CurrencyCode="USD" DecimalPlaces="2" Amount="234.50"/>
+               <TotalFare CurrencyCode="USD" DecimalPlaces="2" Amount="269.90"/>
+            </ItinTotalFare>
+            <PTC_FareBreakdowns>
+               <PTC_FareBreakdown>
+                  <PassengerTypeQuantity Code="ADT" Quantity="1"/>
+                  <FareBasisCodes>
+                     <FareBasisCode FlightSegmentRPH="28149" fareRPH="23750">A12OW</FareBasisCode>
+                  </FareBasisCodes>
+                  <PassengerFare>
+                     <BaseFare CurrencyCode="USD" DecimalPlaces="2" Amount="234.50"/>
+                     <Taxes>
+                        <Tax TaxCode="BGWIQ" TaxName="BGW Int Departure Tax" CurrencyCode="USD" DecimalPlaces="2">22.00</Tax>
+                        <Tax TaxCode="BGWYQ" TaxName="BGW Int Surcharge" CurrencyCode="USD" DecimalPlaces="2">12.00</Tax>
+                        <Tax TaxCode="DXBZR" TaxName="DXB ZR Tax" CurrencyCode="USD" DecimalPlaces="2">1.40</Tax>
+                     </Taxes>
+                     <TotalFare CurrencyCode="USD" DecimalPlaces="2" Amount="269.90"/>
+                     <FareBaggageAllowance FlightSegmentRPH="28149" UnitOfMeasureQuantity="30" UnitOfMeasure="KG" UnitOfMeasureCode="16"/>
+                  </PassengerFare>
+               </PTC_FareBreakdown>
+            </PTC_FareBreakdowns>
+            <FareInfos>
+               <FareInfo>
+                  <RuleInfo>
+                     <ChargesRules>
+                        <VoluntaryChanges VolChangeInd="true">
+                           <Penalty PenaltyType="REVAL_REISSUE" DepartureStatus="BEFORE" CurrencyCode="USD" Amount="40"/>
+                        </VoluntaryChanges>
+                        <VoluntaryRefunds VolChangeInd="true">
+                           <Penalty PenaltyType="CANCEL_REFUND" DepartureStatus="BEFORE" CurrencyCode="USD" Amount="55"/>
+                        </VoluntaryRefunds>
+                     </ChargesRules>
+                  </RuleInfo>
+                  <DepartureAirport LocationCode="BGW"/>
+                  <ArrivalAirport LocationCode="DXB"/>
+               </FareInfo>
+            </FareInfos>
+         </AirItineraryPricingInfo>
+      </PricedItinerary>
+   </PricedItineraries>
+</OTA_AirLowFareSearchRS>

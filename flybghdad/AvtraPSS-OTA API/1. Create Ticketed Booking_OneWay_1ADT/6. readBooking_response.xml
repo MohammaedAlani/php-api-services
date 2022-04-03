@@ -1,0 +1,80 @@
+<OTA_AirBookRS EchoToken="50987" TimeStamp="2020-12-15T14:02:17.880Z" Target="Test" Version="2.001" SequenceNmbr="1" PrimaryLangID="En-us" xmlns="http://www.opentravel.org/OTA/2003/05">
+   <Success/>
+   <AirReservation CreatedDateTme="2020-12-15T13:59:51.629Z">
+      <AirItinerary DirectionInd="OneWay">
+         <OriginDestinationOptions>
+            <OriginDestinationOption>
+               <FlightSegment Status="39" FlightNumber="IF401" FareBasisCode="A12OW" ResBookDesigCode="A12" DepartureDateTime="2020-12-24T13:15:00.000+03:00" ArrivalDateTime="2020-12-24T17:00:00.000+04:00" StopQuantity="0" RPH="1494192">
+                  <DepartureAirport LocationCode="BGW" LocationName="Baghdad International Airport"/>
+                  <ArrivalAirport LocationCode="DXB" LocationName="Dubai International Airport"/>
+                  <OperatingAirline Code="IF"/>
+                  <Equipment AirEquipType="737-700"/>
+               </FlightSegment>
+            </OriginDestinationOption>
+         </OriginDestinationOptions>
+      </AirItinerary>
+      <ArrangerInfo>
+         <CompanyInfo CompanyShortName="AVTRAOTA" Code="AVTRAOTA"/>
+      </ArrangerInfo>
+      <PriceInfo>
+         <ItinTotalFare>
+            <TotalFare CurrencyCode="USD" DecimalPlaces="2" Amount="269.90"/>
+         </ItinTotalFare>
+         <PTC_FareBreakdowns>
+            <PTC_FareBreakdown>
+               <PassengerTypeQuantity Code="ADT" Quantity="1"/>
+               <FareBasisCodes>
+                  <FareBasisCode>A12OW</FareBasisCode>
+               </FareBasisCodes>
+               <PassengerFare>
+                  <BaseFare CurrencyCode="USD" DecimalPlaces="2" Amount="234.50"/>
+                  <Taxes>
+                     <Tax TaxCode="DXBZR" TaxName="DXB ZR Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="1.40"/>
+                     <Tax TaxCode="BGWYQ" TaxName="BGW Int Surcharge" CurrencyCode="USD" DecimalPlaces="2" Amount="12.00"/>
+                     <Tax TaxCode="BGWIQ" TaxName="BGW Int Departure Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="22.00"/>
+                  </Taxes>
+                  <TotalFare CurrencyCode="USD" DecimalPlaces="2" Amount="269.90"/>
+               </PassengerFare>
+               <FareInfo>
+                  <FareInfo FareBasisCode="A12OW">
+                     <Fare BaseAmount="234.50"/>
+                  </FareInfo>
+               </FareInfo>
+            </PTC_FareBreakdown>
+         </PTC_FareBreakdowns>
+      </PriceInfo>
+      <TravelerInfo>
+         <AirTraveler BirthDate="1974-04-16" PassengerTypeCode="ADT" AccompaniedByInfantInd="false" TravelerNationality="IQ" Gender="M">
+            <PersonName>
+               <NamePrefix>Mr</NamePrefix>
+               <GivenName>AHMED</GivenName>
+               <Surname>MOHAMMED</Surname>
+            </PersonName>
+            <Document DocID="E123675422" DocType="2" DocIssueCountry="IQ" DocHolderNationality="IQ" EffectiveDate="2019-10-15" ExpireDate="2029-09-15"/>
+            <TravelerRefNumber RPH="1"/>
+         </AirTraveler>
+      </TravelerInfo>
+      <ContactPerson>
+         <PersonName>
+            <GivenName>AHMED</GivenName>
+            <Surname>MOHAMMED</Surname>
+         </PersonName>
+         <Telephone PhoneNumber="(44)1233222344"/>
+         <HomeTelephone PhoneNumber="(44)1233225744"/>
+         <Email>tba@tba.com</Email>
+      </ContactPerson>
+      <Fulfillment>
+         <PaymentDetails>
+            <PaymentDetail PaymentType="2">
+               <DirectBill DirectBill_ID="AVTRAOTA">
+                  <CompanyName CompanyShortName="AVTRAOTA" Code="AVTRAOTA" AgentType="TRVL_AGNT"/>
+               </DirectBill>
+               <PaymentAmount CurrencyCode="USD" DecimalPlaces="2" Amount="269.90"/>
+            </PaymentDetail>
+         </PaymentDetails>
+      </Fulfillment>
+      <Ticketing TravelerRefNumber="1" TicketDocumentNbr="0170110753275"/>
+      <BookingReferenceID Status="39" Instance="0" ID="M9DEXP" ID_Context="BookingRef"/>
+      <Offer/>
+   </AirReservation>
+</OTA_AirBookRS>

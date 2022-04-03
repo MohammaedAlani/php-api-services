@@ -1,0 +1,4 @@
+<OTA_PingRS EchoToken="50987" TimeStamp="2020-12-15T12:48:39.247Z" Target="Test" Version="2.001" SequenceNmbr="1" PrimaryLangID="En-us" xmlns="http://www.opentravel.org/OTA/2003/05">
+   <EchoData>Received [Echo me Back]. Current Server Time is [2020-12-15T12:48:39.247Z]</EchoData>
+   <Success/>
+</OTA_PingRS>

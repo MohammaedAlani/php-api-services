@@ -1,0 +1,96 @@
+<OTA_AirBookRQ xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTA/2003/05 OTA_AirLowFareSearchRQ.xsd" EchoToken="50987" TimeStamp="2018-10-02T14:31:55.890+00:00" Target="Production" Version="2.001" SequenceNmbr="1" PrimaryLangID="En-us">
+	<POS>
+        <Source AirlineVendorID="IF" ISOCountry="IQ" ISOCurrency="USD">
+            <RequestorID Type="5" ID="AVTRAOTA"/>
+        </Source>
+    </POS>
+    <AirItinerary DirectionInd="Return">
+ 		<OriginDestinationOptions>
+                   <OriginDestinationOption>
+	                  <FlightSegment FlightNumber="IF401" DepartureDateTime="2020-12-24T13:15:00.000+03:00" ArrivalDateTime="2020-12-24T17:00:00.000+04:00" Duration="02:45:00" StopQuantity="0" RPH="28149" ResBookDesigCode="A12">
+	                     <DepartureAirport LocationCode="BGW" Terminal="T1"/>
+	                     <ArrivalAirport LocationCode="DXB" Terminal="T2"/>
+	                     <OperatingAirline Code="IF"/>
+	                     <Equipment AirEquipType="737-700"/>
+	                     <BookingClassAvails>
+	                     	<BookingClassAvail ResBookDesigCode="A12" ResBookDesigQuantity="4"/>
+	                     </BookingClassAvails>
+	                  </FlightSegment>
+                    </OriginDestinationOption>
+                    <OriginDestinationOption>
+                  		<FlightSegment FlightNumber="IF402" DepartureDateTime="2020-12-31T18:00:00.000+04:00" ArrivalDateTime="2020-12-31T19:45:00.000+03:00" Duration="02:45:00" StopQuantity="0" RPH="28197" ResBookDesigCode="A12">
+                     		<DepartureAirport LocationCode="DXB" Terminal="T1"/>
+                     		<ArrivalAirport LocationCode="BGW" Terminal="T2"/>
+                     		<OperatingAirline Code="IF"/>
+                     		<Equipment AirEquipType="737-700"/>
+                            <BookingClassAvails>
+                                <BookingClassAvail ResBookDesigCode="A12" ResBookDesigQuantity="9"/>
+                            </BookingClassAvails>
+                        	</FlightSegment>
+                    </OriginDestinationOption>
+        </OriginDestinationOptions>
+	</AirItinerary>
+    <PriceInfo>
+        <ItinTotalFare>
+              <BaseFare CurrencyCode="USD" DecimalPlaces="2" Amount="609.60"/>
+              <TotalFare CurrencyCode="USD" DecimalPlaces="2" Amount="769.80"/>
+        </ItinTotalFare>
+   	</PriceInfo>
+	<TravelerInfo>		
+		<AirTraveler BirthDate="1974-04-16" PassengerTypeCode="ADT" AccompaniedByInfantInd="true" Gender="M" TravelerNationality="AE">
+			<PersonName>
+				<NamePrefix>MR</NamePrefix>
+				<GivenName>AHMED</GivenName>
+				<Surname>MOHAMMED</Surname>
+			</PersonName>
+			<TravelerRefNumber RPH="1"/>
+			<Document DocID="E123675422" DocType="2" ExpireDate="2029-09-15" EffectiveDate="2019-10-15" DocIssueCountry="AE" DocHolderNationality="AE"/>
+		</AirTraveler>
+		<AirTraveler BirthDate="2014-01-16" PassengerTypeCode="CHD" AccompaniedByInfantInd="false" Gender="M" TravelerNationality="AE">
+			<PersonName>
+				<NamePrefix>MASTER</NamePrefix>
+				<GivenName>BASHEER</GivenName>
+				<Surname>MOHAMMED</Surname>
+			</PersonName>
+			<TravelerRefNumber RPH="2"/>
+			<Document DocID="E432675433" DocType="2" ExpireDate="2026-04-15" EffectiveDate="2019-04-15" DocIssueCountry="AE" DocHolderNationality="AE"/>
+		</AirTraveler>
+		<AirTraveler BirthDate="2019-05-10" PassengerTypeCode="INF" AccompaniedByInfantInd="false" Gender="F" TravelerNationality="AE">
+			<PersonName>
+				<GivenName>SARAH</GivenName>
+				<Surname>MOHAMMED</Surname>
+			</PersonName>
+			<TravelerRefNumber RPH="3" ParentRPH="1"/>
+			<Document DocID="E549675455" DocType="2" ExpireDate="2025-01-15" EffectiveDate="2020-01-15" DocIssueCountry="AE" DocHolderNationality="AE"/>
+		</AirTraveler>
+        	<SpecialReqDetails>
+        		<SeatRequests>
+                    <SeatRequest TravelerRefNumberRPHList="1" FlightRefNumberRPHList="28149" SeatNumber="1F" Quantity="1" Amount="29.00" VatAmount="0"/>
+                    <SeatRequest TravelerRefNumberRPHList="2" FlightRefNumberRPHList="28149" SeatNumber="1E" Quantity="1" Amount="23.00" VatAmount="0"/>
+                    <SeatRequest TravelerRefNumberRPHList="1" FlightRefNumberRPHList="28197" SeatNumber="2F" Quantity="1" Amount="19.00" VatAmount="0"/>
+                   	<SeatRequest TravelerRefNumberRPHList="2" FlightRefNumberRPHList="28197" SeatNumber="2E" Quantity="1" Amount="13.00" VatAmount="0"/>
+                </SeatRequests>
+         	</SpecialReqDetails> 
+	</TravelerInfo>
+	<ContactPerson>
+            <PersonName>
+                <GivenName>AHMED</GivenName>
+                <Surname>MOHAMMED</Surname>
+            </PersonName>
+		  <Telephone PhoneNumber="(964)1233223445"/>
+		  <HomeTelephone PhoneNumber="(964)1232257434"/>
+            <Email>tba@tba.com</Email>
+	</ContactPerson>
+	<Fulfillment>
+		<PaymentDetails>
+			<PaymentDetail>
+				<DirectBill DirectBill_ID="AVTRAOTA">
+					<CompanyName>Avtra OTA</CompanyName>
+				</DirectBill>
+				<PaymentAmount CurrencyCode="USD" DecimalPlaces="2" Amount="853.80"/>
+			</PaymentDetail>
+		</PaymentDetails>
+	</Fulfillment>
+</OTA_AirBookRQ>
+
+

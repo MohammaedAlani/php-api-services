@@ -1,0 +1,62 @@
+<OTA_AirBookModifyRQ xmlns="http://www.opentravel.org/OTA/2003/05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opentravel.org/OTA/2003/05 
+  OTA_AirBookModifyRQ.xsd" EchoToken="50987" TimeStamp="2015-01-16T10:44:10+05:30"
+  Target="Test" Version="2.001" SequenceNmbr="1"  PrimaryLangID="En-us">
+    <POS>
+        <Source AirlineVendorID="IF" ISOCountry="IQ" ISOCurrency="USD">
+            <RequestorID Type="5" ID="AVTRAOTA"/>
+        </Source>
+    </POS>
+    <AirBookModifyRQ ModificationType="15">
+        <Fulfillment>
+            <PaymentDetails>
+            <PaymentDetail PaymentType="2">
+                <DirectBill DirectBill_ID="AVTRAOTA">
+                    <CompanyName CompanyShortName="Avtra OTA" Code="AVTRAOTA"/>
+                </DirectBill>
+                <PaymentAmount CurrencyCode="USD" DecimalPlaces="2" Amount="269.90"/>
+            </PaymentDetail>
+        </PaymentDetails>
+        </Fulfillment>
+    </AirBookModifyRQ>
+    <AirReservation>
+      <AirItinerary DirectionInd="OneWay">
+         <OriginDestinationOptions>
+            <OriginDestinationOption>
+               <FlightSegment Status="39" FlightNumber="IF401" FareBasisCode="A12OW" ResBookDesigCode="A12" DepartureDateTime="2020-12-24T13:15:00.000+03:00" ArrivalDateTime="2020-12-24T17:00:00.000+04:00" StopQuantity="0" RPH="1494200">
+                  <DepartureAirport LocationCode="BGW" LocationName="Baghdad International Airport"/>
+                  <ArrivalAirport LocationCode="DXB" LocationName="Dubai International Airport"/>
+                  <OperatingAirline Code="IF"/>
+                  <Equipment AirEquipType="737-700"/>
+               </FlightSegment>
+            </OriginDestinationOption>
+         </OriginDestinationOptions>
+      </AirItinerary>
+      <TravelerInfo>
+         <AirTraveler BirthDate="1974-04-16" PassengerTypeCode="ADT" AccompaniedByInfantInd="false" TravelerNationality="IQ" Gender="M">
+            <PersonName>
+               <NamePrefix>Mr</NamePrefix>
+               <GivenName>AHMED</GivenName>
+               <Surname>MOHAMMED</Surname>
+            </PersonName>
+            <Document DocID="E123675422" DocType="2" DocIssueCountry="IQ" DocHolderNationality="IQ" EffectiveDate="2019-10-15" ExpireDate="2029-09-15"/>
+            <TravelerRefNumber RPH="1"/>
+         </AirTraveler>
+      </TravelerInfo>
+      <ContactPerson>
+         <PersonName>
+            <GivenName>AHMED</GivenName>
+            <Surname>MOHAMMED</Surname>
+         </PersonName>
+         <Telephone PhoneNumber="(964)7633223445"/>
+         <HomeTelephone PhoneNumber="(964)2232257434"/>
+         <Email>tba@tba.com</Email>
+      </ContactPerson>
+        <Fulfillment>
+            <PaymentDetails/> 
+        </Fulfillment>
+      <Ticketing TicketTimeLimit="2020-12-15T21:34:46.813Z" TicketingStatus="1"/>
+      <BookingReferenceID Status="1" Instance="0" ID="STIRHP" ID_Context="BookingRef"/>
+    </AirReservation>
+</OTA_AirBookModifyRQ>

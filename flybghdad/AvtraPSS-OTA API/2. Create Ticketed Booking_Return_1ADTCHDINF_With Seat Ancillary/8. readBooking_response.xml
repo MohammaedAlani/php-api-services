@@ -1,0 +1,164 @@
+<OTA_AirBookRS EchoToken="50987" TimeStamp="2020-12-15T17:37:08.299Z" Target="Test" Version="2.001" SequenceNmbr="1" PrimaryLangID="En-us" xmlns="http://www.opentravel.org/OTA/2003/05">
+   <Success/>
+   <AirReservation CreatedDateTme="2020-12-15T17:35:22.055Z">
+      <AirItinerary DirectionInd="Return">
+         <OriginDestinationOptions>
+            <OriginDestinationOption>
+               <FlightSegment Status="39" FlightNumber="IF401" FareBasisCode="A12RT" ResBookDesigCode="A12" DepartureDateTime="2020-12-24T13:15:00.000+03:00" ArrivalDateTime="2020-12-24T17:00:00.000+04:00" StopQuantity="0" RPH="1494194">
+                  <DepartureAirport LocationCode="BGW" LocationName="Baghdad International Airport"/>
+                  <ArrivalAirport LocationCode="DXB" LocationName="Dubai International Airport"/>
+                  <OperatingAirline Code="IF"/>
+                  <Equipment AirEquipType="737-700"/>
+               </FlightSegment>
+               <FlightSegment Status="39" FlightNumber="IF402" FareBasisCode="A12RT" ResBookDesigCode="A12" DepartureDateTime="2020-12-31T18:00:00.000+04:00" ArrivalDateTime="2020-12-31T19:45:00.000+03:00" StopQuantity="0" RPH="1494195">
+                  <DepartureAirport LocationCode="DXB" LocationName="Dubai International Airport"/>
+                  <ArrivalAirport LocationCode="BGW" LocationName="Baghdad International Airport"/>
+                  <OperatingAirline Code="IF"/>
+                  <Equipment AirEquipType="737-700"/>
+               </FlightSegment>
+            </OriginDestinationOption>
+         </OriginDestinationOptions>
+      </AirItinerary>
+      <ArrangerInfo>
+         <CompanyInfo CompanyShortName="AVTRAOTA" Code="AVTRAOTA"/>
+      </ArrangerInfo>
+      <PriceInfo>
+         <ItinTotalFare>
+            <TotalFare CurrencyCode="USD" DecimalPlaces="2" Amount="853.80"/>
+         </ItinTotalFare>
+         <PTC_FareBreakdowns>
+            <PTC_FareBreakdown>
+               <PassengerTypeQuantity Code="CHD" Quantity="1"/>
+               <FareBasisCodes>
+                  <FareBasisCode>A12RT</FareBasisCode>
+               </FareBasisCodes>
+               <PassengerFare>
+                  <BaseFare CurrencyCode="USD" DecimalPlaces="2" Amount="239.80"/>
+                  <Taxes>
+                     <Tax TaxCode="DXBYQ" TaxName="DXB Surcharge" CurrencyCode="USD" DecimalPlaces="2" Amount="12.00"/>
+                     <Tax TaxCode="DXBZR" TaxName="DXB ZR Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="2.80"/>
+                     <Tax TaxCode="SEAT" TaxName="Seat Charge" CurrencyCode="USD" DecimalPlaces="2" Amount="36.00"/>
+                     <Tax TaxCode="DXBAE" TaxName="DXB AE Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="20.40"/>
+                     <Tax TaxCode="BGWYQ" TaxName="BGW Int Surcharge" CurrencyCode="USD" DecimalPlaces="2" Amount="12.00"/>
+                     <Tax TaxCode="DXBF6" TaxName="DXB F6 Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="9.50"/>
+                     <Tax TaxCode="BGWIQ" TaxName="BGW Int Departure Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="22.00"/>
+                     <Tax TaxCode="DXBTP" TaxName="DXB TP Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="1.40"/>
+                  </Taxes>
+                  <TotalFare CurrencyCode="USD" DecimalPlaces="2" Amount="319.90"/>
+               </PassengerFare>
+               <FareInfo>
+                  <FareInfo FareBasisCode="A12RT">
+                     <Fare BaseAmount="119.90"/>
+                  </FareInfo>
+               </FareInfo>
+            </PTC_FareBreakdown>
+            <PTC_FareBreakdown>
+               <PassengerTypeQuantity Code="INF" Quantity="1"/>
+               <FareBasisCodes>
+                  <FareBasisCode>A12RT</FareBasisCode>
+               </FareBasisCodes>
+               <PassengerFare>
+                  <BaseFare CurrencyCode="USD" DecimalPlaces="2" Amount="50.00"/>
+                  <Taxes/>
+                  <TotalFare CurrencyCode="USD" DecimalPlaces="2" Amount="50.00"/>
+               </PassengerFare>
+               <FareInfo>
+                  <FareInfo FareBasisCode="A12RT">
+                     <Fare BaseAmount="25.00"/>
+                  </FareInfo>
+               </FareInfo>
+            </PTC_FareBreakdown>
+            <PTC_FareBreakdown>
+               <PassengerTypeQuantity Code="ADT" Quantity="1"/>
+               <FareBasisCodes>
+                  <FareBasisCode>A12RT</FareBasisCode>
+               </FareBasisCodes>
+               <PassengerFare>
+                  <BaseFare CurrencyCode="USD" DecimalPlaces="2" Amount="319.80"/>
+                  <Taxes>
+                     <Tax TaxCode="DXBYQ" TaxName="DXB Surcharge" CurrencyCode="USD" DecimalPlaces="2" Amount="12.00"/>
+                     <Tax TaxCode="DXBZR" TaxName="DXB ZR Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="2.80"/>
+                     <Tax TaxCode="SEAT" TaxName="Seat Charge" CurrencyCode="USD" DecimalPlaces="2" Amount="48.00"/>
+                     <Tax TaxCode="DXBAE" TaxName="DXB AE Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="20.40"/>
+                     <Tax TaxCode="DXBF6" TaxName="DXB F6 Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="9.50"/>
+                     <Tax TaxCode="BGWYQ" TaxName="BGW Int Surcharge" CurrencyCode="USD" DecimalPlaces="2" Amount="12.00"/>
+                     <Tax TaxCode="BGWIQ" TaxName="BGW Int Departure Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="22.00"/>
+                     <Tax TaxCode="DXBTP" TaxName="DXB TP Tax" CurrencyCode="USD" DecimalPlaces="2" Amount="1.40"/>
+                  </Taxes>
+                  <TotalFare CurrencyCode="USD" DecimalPlaces="2" Amount="399.90"/>
+               </PassengerFare>
+               <FareInfo>
+                  <FareInfo FareBasisCode="A12RT">
+                     <Fare BaseAmount="159.90"/>
+                  </FareInfo>
+               </FareInfo>
+            </PTC_FareBreakdown>
+         </PTC_FareBreakdowns>
+      </PriceInfo>
+      <TravelerInfo>
+         <AirTraveler BirthDate="1974-04-16" PassengerTypeCode="ADT" AccompaniedByInfantInd="true" TravelerNationality="AE" Gender="M">
+            <PersonName>
+               <NamePrefix>Mr</NamePrefix>
+               <GivenName>AHMED</GivenName>
+               <Surname>MOHAMMED</Surname>
+            </PersonName>
+            <Document DocID="E123675422" DocType="2" DocIssueCountry="AE" DocHolderNationality="AE" EffectiveDate="2019-10-15" ExpireDate="2029-09-15"/>
+            <TravelerRefNumber RPH="1"/>
+         </AirTraveler>
+         <AirTraveler BirthDate="2014-01-16" PassengerTypeCode="CHD" AccompaniedByInfantInd="false" TravelerNationality="AE" Gender="M">
+            <PersonName>
+               <NamePrefix>Master</NamePrefix>
+               <GivenName>BASHEER</GivenName>
+               <Surname>MOHAMMED</Surname>
+            </PersonName>
+            <Document DocID="E432675433" DocType="2" DocIssueCountry="AE" DocHolderNationality="AE" EffectiveDate="2019-04-15" ExpireDate="2026-04-15"/>
+            <TravelerRefNumber RPH="2"/>
+         </AirTraveler>
+         <AirTraveler BirthDate="2019-05-10" PassengerTypeCode="INF" AccompaniedByInfantInd="false" TravelerNationality="AE" Gender="F">
+            <PersonName>
+               <GivenName>SARAH</GivenName>
+               <Surname>MOHAMMED</Surname>
+            </PersonName>
+            <Document DocID="E549675455" DocType="2" DocIssueCountry="AE" DocHolderNationality="AE" EffectiveDate="2020-01-15" ExpireDate="2025-01-15"/>
+            <TravelerRefNumber RPH="3" ParentRPH="1"/>
+         </AirTraveler>
+      </TravelerInfo>
+      <ContactPerson>
+         <PersonName>
+            <GivenName>AHMED</GivenName>
+            <Surname>MOHAMMED</Surname>
+         </PersonName>
+         <Telephone PhoneNumber="(964)1233223445"/>
+         <HomeTelephone PhoneNumber="(964)1232257434"/>
+         <Email>tba@tba.com</Email>
+      </ContactPerson>
+      <Fulfillment>
+         <PaymentDetails>
+            <PaymentDetail PaymentType="2">
+               <DirectBill DirectBill_ID="AVTRAOTA">
+                  <CompanyName CompanyShortName="AVTRAOTA" Code="AVTRAOTA" AgentType="TRVL_AGNT"/>
+               </DirectBill>
+               <PaymentAmount CurrencyCode="USD" DecimalPlaces="2" Amount="853.80"/>
+            </PaymentDetail>
+         </PaymentDetails>
+      </Fulfillment>
+      <Ticketing TravelerRefNumber="1" TicketDocumentNbr="0170110753277"/>
+      <Ticketing TravelerRefNumber="2" TicketDocumentNbr="0170110753278"/>
+      <Ticketing TravelerRefNumber="3" TicketDocumentNbr="0170110753279"/>
+      <BookingReferenceID Status="39" Instance="0" ID="LCB6MI" ID_Context="BookingRef"/>
+      <Offer>
+         <Priced FlightSegmentRPH="1494194" TravelerRPH="1" ID="1F" Name="Seat">
+            <Pricing OfferQty="1" PreTaxAmount="29" TaxAmount="0" Amount="29" PricingCurrency="USD" DecimalPlaces="2"/>
+         </Priced>
+         <Priced FlightSegmentRPH="1494195" TravelerRPH="1" ID="2F" Name="Seat">
+            <Pricing OfferQty="1" PreTaxAmount="19" TaxAmount="0" Amount="19" PricingCurrency="USD" DecimalPlaces="2"/>
+         </Priced>
+         <Priced FlightSegmentRPH="1494194" TravelerRPH="2" ID="1E" Name="Seat">
+            <Pricing OfferQty="1" PreTaxAmount="23" TaxAmount="0" Amount="23" PricingCurrency="USD" DecimalPlaces="2"/>
+         </Priced>
+         <Priced FlightSegmentRPH="1494195" TravelerRPH="2" ID="2E" Name="Seat">
+            <Pricing OfferQty="1" PreTaxAmount="13" TaxAmount="0" Amount="13" PricingCurrency="USD" DecimalPlaces="2"/>
+         </Priced>
+      </Offer>
+   </AirReservation>
+</OTA_AirBookRS>
